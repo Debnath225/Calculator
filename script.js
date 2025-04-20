@@ -356,7 +356,7 @@ calSubmit3.addEventListener("click", () => {
           parseFloat(degree.value) +
           parseFloat(minutes.value) / 60 +
           parseFloat(second.value) / 3600;
-        result3.value = inDeg + " " + "deg";
+        result3.value = `${inDeg} deg`;
         rotate.style.transform = `rotate(${-inDeg}deg)`;
         break;
       case "inMin":
