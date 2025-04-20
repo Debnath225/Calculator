@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  height: 100vh;
+}
+header {
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 3vh;
+}
+@media screen and (max-width: 760px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+.stylediv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2.4vh;
+  background-color: rgba(0, 0, 0, 0.814);
+  height: 35%;
+  width: 35%;
+  margin: 2vh;
+  border-radius: 1.4vh;
+  color: #f0f0f0;
+  filter: drop-shadow(0 0 0.75rem gray);
+}
+h1 {
+  margin-top: 3vh;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 1vh;
+  background-color: #333;
+  color: white;
+}
+#operator,
+#degMinSec {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2vh;
+  background-color: rgba(22, 21, 21, 0.563);
+  /* height: 35%; */
+  width: auto;
+  margin: 2vh;
+  border-radius: 1.4vh;
+  font-size: large;
+  text-align: center;
+  padding: 2vh;
+  color: #f0f0f0;
+  filter: drop-shadow(0 0 0.75rem gray);
+}
+input[type="number"] {
+  text-decoration: none;
+  border: none;
+  width: 85%;
+  padding: 1.3vh;
+  border: none;
+  border-radius: 0.5vh;
+  font-size: 1.6vh;
+  margin-bottom: 2vh;
+}
+input[type="text"] {
+  text-decoration: none;
+  border: none;
+  width: 85%;
+  padding: 1.3vh;
+  border: none;
+  border-radius: 0.5vh;
+  font-size: 1.6vh;
+  margin-bottom: 2vh;
+}
+input[type="submit"] {
+  background-color: #06fc71c5;
+  color: white;
+  border: none;
+  padding: 1.3vh;
+  border-radius: 0.5vh;
+  font-size: 2vh;
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.85rem green);
+}
+input[type="button"] {
+  background-color: #e90505;
+  color: white;
+  border: none;
+  padding: 1.3vh;
+  border-radius: 0.5vh;
+  font-size: 2vh;
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.75rem rgba(255, 0, 0, 0.581));
+}
+#result,
+#result2,
+#result3 {
+  outline: none;
+  resize: vertical;
+  overflow: scroll;
+  scrollbar-width: none;
+  padding-top: 0.1vh;
+  font-size: 3vh;
+  font-family: "Courier New", Courier, monospace;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 760px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    font-size: 14px;
+  }
+  .stylediv {
+    width: 90%;
+    height: auto;
+    margin: 2vh auto;
+  }
+  #operator {
+    height: auto;
+    margin: 2vh auto;
+  }
+}
+input[type="number"]:focus {
+  border: 2px solid green;
+  outline: none;
+  filter: drop-shadow(0 0 0.25rem gray);
+}
+#subClear {
+  display: flex;
+  column-gap: 5vh;
+}
+#subClear > input[type="button"]:active,
+input[type="submit"]:active {
+  scale: 0.89;
+}
+#history {
+  color: #f0f0f0;
+}
+
+/* solve equations */
+
+#equationCon,
+#degMinSecCon {
+  color: #f0f0f0;
+  background-color: rgba(0, 0, 0, 0.814);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1.4vh;
+  margin-bottom: 4vh;
+  margin-top: 2vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  filter: drop-shadow(0 0 0.75rem gray);
+  font-size: large;
+}
+input[type="button"]:active {
+  scale: 0.89;
+  background-color: #f808207c;
+}
+.inline {
+  display: flex;
+  column-gap: 5vh;
+}
+
+/* angle calculator */
+#angleView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  width: 80%;
+  border-radius: 0.5vh;
+  background-color: #605f5f;
+}
+#base {
+  height: 0.5vh;
+  width: 12vh;
+  background-color: rgb(235, 8, 42);
+  border-top-right-radius: 1vh;
+  border-bottom-right-radius: 1vh;
+  position: absolute;
+  /* transform: translateX(-3px); */
+}
+#rotate {
+  position: absolute;
+  z-index: 1;
+  height: 0.5vh;
+  width: 12vh;
+  background-color: rgb(10, 245, 143);
+  border-top-right-radius: 1vh;
+  border-bottom-right-radius: 1vh;
+  transform-origin: left;
+  transform: rotate(0deg);
+  transition: transform 0.9s ease-in-out;
+}

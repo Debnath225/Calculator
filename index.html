@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="A simple calculator application built with HTML, CSS, and JavaScript."
+    />
+
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Basic Calculator</h1>
+    </header>
+    <main>
+      <div class="stylediv">
+        <h1>Calculator</h1>
+        <input
+          type="number"
+          name=""
+          id="value1"
+          placeholder="Enter First value..."
+        />
+        <select name="" id="operator">
+          <option value="+" selected>+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+          <option value="%">%</option>
+          <option value="^">^</option>
+          <option value="√">√</option>
+          <option value="log">log</option>
+          <option value="sin">sin</option>
+          <option value="cos">cos</option>
+          <option value="tan">tan</option>
+          <option value="asin">asin</option>
+          <option value="acos">acos</option>
+          <option value="atan">atan</option>
+          <option value="abs">abs</option>
+          <option value="exp">exp</option>
+          <option value="ln">ln</option>
+          <option value="deg">Rad to deg</option>
+          <option value="rad">Deg to rad</option>
+          <option value="!">!</option>
+          <option value="nPr">nPr</option>
+          <option value="nCr">nCr</option>
+        </select>
+        <input
+          type="number"
+          name=""
+          id="value2"
+          placeholder="Enetr second value..."
+        />
+        <div id="subClear">
+          <input
+            type="submit"
+            name=""
+            id="calSbumit"
+            value="Evaluate"
+            onclick="calculate()"
+          />
+          <input type="button" name="clear" id="clear" value="Clear" />
+        </div>
+        <br />
+        <input type="button" value="Reset" id="reset1" />
+        <br />
+        <textarea
+          name="textarea"
+          id="result"
+          cols="20"
+          rows="4"
+          placeholder="Result..."
+          desabled
+        ></textarea>
+
+        <div class="con">
+          <button popovertarget="model">History</button>
+          <div id="model" popover>
+            <h2>History</h2>
+            <ol id="orderdList"></ol>
+            <button popovertarget="model">Close</button>
+          </div>
+        </div>
+
+        <br />
+      </div>
+
+      <!-- equation solver -->
+      <div id="equationCon">
+        <h1>Solve Equations</h1>
+        <br />
+        <label for="x2">Enter coefficent of x<sup>2</sup></label>
+        <input type="number" name="x2" id="x2" />
+        <br />
+        <label for="x">Enter coefficent of x</label>
+        <input type="number" name="x" id="x" />
+        <br />
+        <label for="x0">Enter coefficent of x<sup>0</sup></label>
+        <input type="number" name="x0" id="x0" />
+        <br />
+        <div class="inline">
+          <input type="submit" value="Evaluate" id="calSubmit2" />
+          <input type="button" value="Clear" id="clear2" />
+        </div>
+        <br />
+        <textarea
+          id="result2"
+          cols="20"
+          rows="4"
+          placeholder="Result..."
+        ></textarea>
+        <br />
+      </div>
+      <br />
+      <div id="degMinSecCon">
+        <h1>Angle calculations:-</h1>
+        <br />
+        <label for="deg" id="degLabel">Enter Degree value:-</label>
+        <input type="number" id="deg" />
+        <br />
+        <label for="min" id="minLabel">Enter Minute value:-</label>
+        <input type="number" id="min" />
+        <br />
+        <label for="sec" id="secLabel">Enter Second value:-</label>
+        <input type="number" id="sec" />
+        <br />
+        <select name="degMinSec" id="degMinSec">
+          <option value="degToRad">Degree to Radian(°-->c)</option>
+          <option value="radToDeg">Radian to Degree(c-->°)</option>
+          <option value="inDeg" selected>In Degree(°)</option>
+          <option value="inMin">In Minute( ′)</option>
+          <option value="inSec">In Second( ″)</option>
+          <option value="degToMin">Degree to Minute( °-->′)</option>
+          <option value="minToDeg">Minute to Degree(′-->° )</option>
+          <option value="minToSec">Minute to Second(′-->″)</option>
+          <option value="secToMin">Second to Minute(″-->′)</option>
+          <option value="degToSec">Degree to Second(°-->″)</option>
+          <option value="secToDeg">Second to Degree(″-->°)</option>
+        </select>
+        <br />
+        <div class="inline">
+          <input type="submit" value="Evaluate" id="calSubmit3" />
+          <input type="button" value="Clear" id="clear3" />
+        </div>
+        <br />
+        <input type="button" value="Reset" id="reset3" />
+        <br />
+        <textarea
+          id="result3"
+          cols="20"
+          rows="4"
+          placeholder="Result..."
+          id="result3"
+        >
+        </textarea>
+        <strong>Angle View</strong>
+        <div id="angleView">
+          <div id="base"></div>
+          <div id="rotate"></div>
+        </div>
+        <br />
+      </div>
+      <br />
+    </main>
+    <footer>
+      <p>&copy; 2025 Basic Calculator. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
