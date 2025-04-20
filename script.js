@@ -343,12 +343,12 @@ calSubmit3.addEventListener("click", () => {
     switch (val) {
       case "degToRad":
         const degreeToRad = (degree.value * Math.PI) / 180;
-        result3.value = degreeToRad + " " + "rad";
+        result3.value = `${degreeToRad} rad`;
         rotate.style.transform = `rotate(${-degreeToRad}rad)`;
         break;
       case "radToDeg":
         const radianToDegree = (degree.value * 180) / Math.PI;
-        result3.value = radianToDegree + " " + "deg";
+        result3.value = `${radianToDegree} deg`;
         rotate.style.transform = `rotate(${-radianToDegree}deg)`;
         break;
       case "inDeg":
@@ -368,7 +368,7 @@ calSubmit3.addEventListener("click", () => {
           parseFloat(degree.value) +
           parseFloat(minutes.value) / 60 +
           parseFloat(second.value) / 3600;
-        result3.value = inMin + " " + "min";
+        result3.value = `${inMin} min`;
         rotate.style.transform = `rotate(${-cir}deg)`;
         break;
       case "inSec":
@@ -391,7 +391,7 @@ calSubmit3.addEventListener("click", () => {
         break;
       case "minToDeg":
         const minToDeg = minutes.value / 60;
-        result3.value = minToDeg + " " + "deg";
+        result3.value = `${minToDeg} deg`;
         rotate.style.transform = `rotate(${-minToDeg}deg)`;
         break;
       case "minToSec":
@@ -410,7 +410,7 @@ calSubmit3.addEventListener("click", () => {
         break;
       case "secToDeg":
         const secToDeg = second.value / 3600;
-        result3.value = secToDeg + " " + "deg";
+        result3.value = `${secToDeg} deg`;
         rotate.style.transform = `rotate(${-secToDeg}deg)`;
         break;
 
