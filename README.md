@@ -13,7 +13,11 @@ A simple and responsive calculator app designed for quick and efficient calculat
 
 ## Screenshots
 
-![Calculator Screenshot](Screenshot_20250501_194736 (1).jpg)  
+![Calculator Screenshots]
+<br>
+(<img src="Screenshot_20250501_194736 (1).jpg" alt="simple calculator">) 
+<br/>
+<img src="#" alt="equations solver">
 *(Replace with an actual screenshot of your app)*
 
 ## Installation
