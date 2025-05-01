@@ -15,11 +15,14 @@ A simple and responsive calculator app designed for quick and efficient calculat
 
 ![Calculator Screenshots]
 <br>
-(<img src="Screenshot_20250501_194736 (1).jpg" alt="simple calculator">) 
+<h3>All basic operator are included here...</h3>
+<img src="Screenshot_20250501_194736 (1).jpg" alt="simple calculator">
 <br/>
+<h3>Solve quadratic equations with a single click...</h3>
 <img src="Screenshot_20250501_194741 (1).jpg" alt="equations solver">
 <br/>
-<img src="#" alt="deg,min,sec calculate ">
+<h3>Degree minutes second calculation with easy interface..</h3>
+<img src="Screenshot_20250501_194832 (1).jpg" alt="deg,min,sec calculate ">
 *(Replace with an actual screenshot of your app)*
 
 ## Installation
