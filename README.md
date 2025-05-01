@@ -17,7 +17,9 @@ A simple and responsive calculator app designed for quick and efficient calculat
 <br>
 (<img src="Screenshot_20250501_194736 (1).jpg" alt="simple calculator">) 
 <br/>
-<img src="#" alt="equations solver">
+<img src="Screenshot_20250501_194741 (1).jpg" alt="equations solver">
+<br/>
+<img src="#" alt="deg,min,sec calculate ">
 *(Replace with an actual screenshot of your app)*
 
 ## Installation
